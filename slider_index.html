@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <!-- Meta Tags -->
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <!-- JQuery -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="crossorigin="anonymous"></script>
+
+        <!-- CDN Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <!-- Feuille de style CSS calcul_JS_style.css -->
+        <link rel="stylesheet" type="text/css" href="slider_style.css">
+
+        <title>Musique</title>
+    </head>
+<body>
+    <div class="slider">
+        <div class="navigation">
+            <i class="fas fa-chevron-circle-right" id="suivant"></i>
+            <i class="fas fa-chevron-circle-left" id="precedent"></i>
+        </div>
+
+        <img src="img/1.png" alt="1" class="img-slider active" />
+        <img src="img/2.png" alt="2" class="img-slider" />
+        <img src="img/3.png" alt="3" class="img-slider" />
+
+        <div class="pastilles">
+            <div class="pastille active"></div>
+            <div class="pastille"></div>
+            <div class="pastille"></div>
+            <div id="playoupause">
+                <div id="play"><i class="fas fa-play"></i></div>
+                <div id="pause"><i class="fas fa-pause"></i></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="slider_javaScript.js"></script>
+
+</body>
+</html>

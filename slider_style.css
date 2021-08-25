@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.slider {
+    position: relative;
+    height: 50vh;
+}
+
+.slider .img-slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.slider .img-slider.active {
+    opacity: 1;
+}
+
+.fa-chevron-circle-right, .fa-chevron-circle-left {
+    position: absolute;
+    z-index: 1;
+    color: #fff;
+    font-size: 4rem;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0.5;
+    transition: opacity .5s;
+    cursor: pointer;
+}
+
+.fa-chevron-circle-right:hover, .fa-chevron-circle-left:hover {
+    opacity: 1;
+}
+
+.fa-chevron-circle-right {
+    right: 1rem;  
+}
+
+.fa-chevron-circle-left {
+    left: 1rem;
+}
+
+.pastilles {
+    height: 40px;
+    width: 100%;
+    position: absolute;
+    bottom: 1rem;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.pastille {
+    margin-left: 2px;
+    margin-right: 2px;
+    margin-bottom: 5px;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background: #fff;
+    transition: all .5s;
+    opacity: 0.5;
+}
+
+.pastille.active {
+    background: rgb(43, 43, 43);
+    opacity: 1;
+}
+
+#play {
+    display: none;
+}
+
+#pause {
+    display: block;
+}
